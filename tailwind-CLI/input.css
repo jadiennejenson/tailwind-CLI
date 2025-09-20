@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import "script.js";
+@import "adoption.js";
+@config "./tailwind.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//block border-2 rounded border-blue-800
+
+.pets {
+    @apply grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 m-2;
+}
+.pets div {
+    @apply border border-black rounded-md overflow-hidden bg-neutral-100;
+}
+.pets span {
+    @apply block text-center text-lg py-2;
+}
+.pets img {
+    @apply w-full;
+}
+.pets a {
+    @apply block p-1 mx-4 my-2 text-center bg-blue-200 text-white rounded-full border-2 border-blue-700 transition-all duration-300;
+}
+.pets a:hover {
+    @apply bg-neutral-600 border-neutral-900;
+}
+
+
+
+
+.multiple div {
+    @apply border border-black rounded-md overflow-hidden bg-neutral-100;
+}
+.mutliple img {
+    @apply w-full;
+}
+.multiple a {
+    @apply block p-1 mx-4 my-2 text-center bg-blue-200 text-white rounded-full border-2 border-blue-700 transition-all duration-300;
+}
+.multiple a:hover {
+    @apply bg-neutral-600 border-neutral-900;
+}
+
+
+
+.ad1 {
+    @apply grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 m-2;
+}
+
+.ad1 div {
+    @apply border border-black rounded-md overflow-hidden bg-neutral-100 text-center;
+}
+
+.ad1 img {
+    @apply w-full h-60 object-cover;
+}
+
+.ad1 h2 {
+    @apply mx-2 mt-2 text-center;
+}
+
+.adspeicies {
+    @apply text-black text-center;
+}
+
+.ad1 p {
+    @apply text-neutral-800 mx-2 my-3 text-sm text-center;
+}
+
+.adcost {
+    @apply text-blue-400 mx-2 mt-3;
+}
+
+.adlinks {
+    @apply flex gap-3 mx-2 mt-4 mb-2 justify-center;
+}
+
+.adlinks a {
+   @apply block p-2 mx-4 my-2 text-center bg-blue-400 text-white rounded-full border-2 border-blue-700 transition-all duration-300;
+}
+
+.adlinks a.mi {
+    @apply bg-blue-800;
+}
+
+.adlinks a.av {
+    @apply bg-red-800;
+}
+
+.adlinks a:hover {
+    @apply bg-neutral-600 border-neutral-900;
+}

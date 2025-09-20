@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Supplies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="max-w-6xl mx-auto">
+    <header class="grid grid-cols-[auto_44px_44px] gap-2 p-2 px-2 border-b">
+        <img src="images/logo header.svg" width="300" height="200" alt="Pet Supplies Logo">
+        <a class="border w-11 h-11 flex justify-around rounded-full hover:bg-slate-200" href="#"><img class="w-4" src="images/person-circle.svg"></a>
+        <a class="border w-11 h-11 flex justify-around rounded-full hover:bg-slate-200" href="#"><img class="w-4" src="images/heart.svg"></a>
+
+    </header>
+
+    <nav class="bg-sky-300 flex flex-col sm:flex-row sm:border-b sm:border-x-2 px-2 border-blue-700">
+        <ul class="flex flex-col sm:flex-row">
+            <li class="text-orange-800 border-neutral-700">
+                <a href="index.html" class="block py-2 px-3 text-gray-800 hover:text-gray-400">Home</a>
+            </li>
+            <li>
+                <a href="adopt.html" class="block py-2 px-3 text-black hover:text-gray-400">Adoption</a>
+            </li>
+            <li>
+                <a href="food.html" class="block py-2 px-3 text-gray-800 hover:text-gray-400">Food & Treats</a>
+            </li>
+            <li>
+                <a href="coupons" class="block py-2 px-3 text-gray-800 hover:text-gray-400">Coupons</a>
+            </li>
+            <li>
+                <a href="toys.html" class="block py-2 px-3 text-gray-800 hover:text-gray-400">Toys</a>
+            </li>
+            <li>
+                <a href="cart.html" class="block py-2 px-3 text-gray-800 hover:text-gray-400 active:block border-2 rounded border-blue-800">Cart</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+<h1 class="text-2xl font-extrabold px-3 mb-4">Cart Summary</h1>
+<br>
+<br>
+<h2 class="text-lg font-semibold text-red-600 px-3 m-2">Shipping Information</h2>
+<br>
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">First Name</h2>
+<label for="firstname" class="block py-2 px-3 text-gray-700 font-medium rounded-full">
+    <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" class="block py-2 px-3 text-gray-700 font-medium rounded-full box-border border-gray-500">
+</label>
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">Last Name</h2>
+<label for="lastname" class="block py-2 px-3 text-gray-700 font-medium rounded-full">
+    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" class="block py-2 px-3 text-gray-700 font-medium rounded-full border border-gray-500">
+</label>
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">Address</h2>
+<label for="address" class="block py-2 px-3 text-gray-700 font-medium rounded-full">
+    <input type="text" id="address" name="address" placeholder="Enter your address" class="block py-2 px-3 text-gray-700 font-medium rounded-full border border-gray-500">
+</label>
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">City</h2>
+<label for="city" class="block py-2 px-3 text-gray-700 font-medium rounded-full">
+    <input type="text" id="city" name="city" placeholder="Enter your city" class="block py-2 px-3 text-gray-700 font-medium rounded-full border border-gray-500">
+</label>
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">ZIP Code</h2>
+<label for="zip" class="block py-3 px-3 text-gray-700 font-medium rounded-full">
+    <input type="text" id="zip" name="zip" placeholder="Enter your ZIP code" class="block py-2 px-3 text-gray-700 font-medium rounded-full border border-gray-500">
+</label>
+
+   <label for="state-select" class="text-lg font-semibold px-3 mb-2 text-black">Choose a state:</label>
+<select name="states" id="state-select" class="block py-2 px-4 mb-2 text-gray-700 font-medium rounded-full border border-gray-500">
+    <option value="" disabled selected>-- Select a state --</option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+</select>
+
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">Phone Number</h2>
+<label for="phone" class="block py-2 px-3 text-gray-700 font-medium rounded-full">
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="block py-2 px-3 text-gray-700 font-medium rounded-full border border-gray-500">
+</label>
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">Email</h2>
+<label for="email" class="block py-2 px-3 text-gray-700 font-medium rounded-full">
+    <input type="email" id="email" name="email" placeholder="Enter your email" class="block py-2 px-3 text-gray-700 font-medium rounded-full border border-gray-500">
+</label>
+
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">Shipping Options</h2>  
+<label class="grid grid-cols-[22px_auto_100px] space-x-1 px-2 py-1 border-b-2 border-blue-300">
+    <input type="radio" name="shipping" value="free" checked>
+    <div class="text-black font-medium hover:text-amber-400">Free Shipping<span class="block text-gray-500 font-light text-xs">With a week</span></div>
+    <div class="text-right font-medium pr-1">$0.00</div>
+</label>
+<label class="grid grid-cols-[22px_auto_100px] space-x-1 px-2 py-1 border-b-2 border-blue-300">
+    <input type="radio" name="shipping" value="overnight">
+    <div class="text-black font-medium hover:text-amber-400">Overnight Shipping<span class="block text-gray-500 font-light text-xs">Next day delivery</span></div>
+    <div class="text-right font-medium pr-1">$20.00</div>
+</label>
+<label class="grid grid-cols-[22px_auto_100px] space-x-1 px-2 py-1 border-b-2 border-blue-300">
+    <input type="radio" name="shipping" value="express">
+    <div class="text-black font-medium hover:text-amber-400">Express Shipping<span class="block text-gray-500 font-light text-xs">2-3 business days</span></div>
+    <div class="text-right font-medium pr-1">$10.00</div>
+</label>
+
+</main>
+<br>
+<br>
+<h2 class="text-lg font-semibold px-3 mb-2 text-black">Payment</h2>
+<button class="bg-cyan-200 hover:bg-sky-800 text-black font-medium py-2 px-4 m-2 rounded">Credit Card</button>
+<button class="bg-cyan-200 hover:bg-sky-800 text-black font-medium py-2 px-4 m-2 rounded">PayPal</button>
+<button class="bg-cyan-200 hover:bg-sky-800 text-black font-medium py-2 px-4 m-2 rounded">Apple Pay</button>
+<br>
+<br>
+<button class="bg-cyan-200 hover:bg-sky-800 text-black font-medium py-2 px-4 m-2 rounded">Complete Order</button>
+
+</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <footer>
+<p class="text-center text-sm text-neutral-700" >&copy; Jadienne &bull; DWDD</p>
+
+</footer>
+
+</body>
+</html>

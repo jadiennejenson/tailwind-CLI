@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Supplies</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="http://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+     <div class="max-w-6xl mx-auto">
+   
+    <header class="grid grid-cols-[auto_44px_44px] gap-2 p-2 px-2 border-b">
+        <img src="images/logo header.svg" width="300" height="200" alt="Pet Supplies Logo">
+        <a class="border w-11 h-11 flex justify-around rounded-full hover:bg-slate-200" href="#"><img class="w-4" src="images/person-circle.svg"></a>
+        <a class="border w-11 h-11 flex justify-around rounded-full hover:bg-slate-200" href="#"><img class="w-4" src="images/heart.svg"></a>
+    </header>
+
+    </div>
+
+    <nav class="bg-sky-300 flex flex-col sm:flex-row sm:border-b sm:border-x-2 px-2">
+        <ul class="flex flex-col sm:flex-row">
+            <li class="text-orange-800 border-neutral-700">
+                <a href="index.html" class="block py-2 px-3 text-black hover:text-gray-400 active:border border-2 rounded border-blue-800">Home</a>
+            </li>
+            <li>
+                <a href="adopt.html" class="block py-2 px-3 text-black hover:text-gray-400">Adoption</a>
+            </li>
+            <li>
+                <a href="food.html" class="block py-2 px-3 text-black hover:text-gray-400">Food & Treats</a>
+            </li>
+            <li>
+                <a href="coupons" class="block py-2 px-3 text-black hover:text-gray-400">Coupons</a>
+            </li>
+            <li>
+                <a href="toys.html" class="block py-2 px-3 text-black hover:text-gray-400">Toys</a>
+            </li>
+            <li>
+                <a href="cart.html" class="block py-2 px-3 text-black hover:text-gray-400">Cart</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="max-w-screen-xl mx-auto">
+
+         <picture class="multiple"> 
+            <source media="(max-width: 5600px)" srcset="images/multiplepets5600px.jpg">
+            <source media="(min-width: 1400px)" srcset="images/multiplepets1400px.jpg">
+            <img src="images/multiplepets.jpg" alt="Owners and Pets">
+            <a class="text-black absolute bottom-4 right-4 bg-blue-200 py-2 px-4 rounded border drop-shadow-lg hover:bg-orange-400"
+            n href="adopt.html" class="adopt">Adopt a Pet TODAY</a>
+         </picture>
+            <br>
+    
+     <h1 class="text-blue-800 text-2xl px-2 py-3">Home</h1>
+
+    <section class="pets">
+         <div>
+            <img src="images/dog.jpg" alt="Dog Toys">
+            <span>Dogs</span>
+            <a href="dogtoys.html">Search More</a>
+        </div>
+            
+        <div>
+            <img src="images/cat.jpg" alt="Cat Toys">
+                     <span>Cats</span>
+                     <a href="cattoys.html">Search More</a>
+                </div>
+
+                <div>
+                     <img src="images/goldfish.jpg" alt="Fish Toys">
+                     <span>Fish</span>
+                     <a href="fishtoys.html">Search More</a>
+                </div>
+
+                <div>
+                     <img src="images/Leopard Gecko.jpg" alt="Reptile Toys">
+                     <span>Reptiles</span>
+                     <a href="#">Search More</a>
+                </div>
+
+                <div>
+                     <img src="images/guineapig.jpg" alt="Rodent Toys">
+                     <span>Small Pets</span>
+                     <a href="#">Search More</a>
+                </div>
+
+                <div>
+                     <img src="images/birds.jpg" alt="Bird Toys">
+                     <span>Birds</span>
+                     <a href="birdtoys.html">Search More</a>
+                </div>
+                </section>
+
+   
+</main>
+
+<footer>
+    <p class="text-center text-sm text-neutral-700" >&copy; Jadienne &bull; DWDD</p>
+</footer>
+
+</body>
+
+</html>
